@@ -7,7 +7,13 @@
 [![](https://img.shields.io/badge/Author-NuanNuan-ff69b4.svg)](https://t.me/NUAN114514)
 [![](https://img.shields.io/badge/Configuration-Loon-blue.svg)](https://github.com/Loon0x00/Loon)
 [![](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/NUAN114514)
+### 🙌 致敬 (Credits)
 
+本配置文件基于 **Kelee** 大佬的懒人配置修改而来，衷心感谢大佬的开源精神！
+
+* Original Project: [ProxyResource](https://github.com/luestr/ProxyResource/tree/main)
+* Plugin Hub: [Kelee Hub](https://hub.kelee.one)
+* 
 </div>
 
 ## 📖 简介 (Introduction)
