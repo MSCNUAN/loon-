@@ -55,7 +55,6 @@
 
 ```
 
-[Remote Proxy]
 # 👇 把下面的链接换成你自己的！
 我的订阅 = [https://example.com/api/v1/client/subscribe?token=xxxx](https://example.com/api/v1/client/subscribe?token=xxxx), parser-enable=true
 
