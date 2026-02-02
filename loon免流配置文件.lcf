@@ -1,0 +1,186 @@
+# ===================================================
+# 🦄 Loon 懒人配置 (新手免流版) By 暖暖
+# 更新时间: 2026-02-02
+# ---------------------------------------------------
+# 📖 新手必读 (Read Me First)
+# 1. 🆕 第一次使用？请务必先按照此教程修改设置：
+#    👉 https://t.me/ibilibili/165
+# 2. 🙅‍♂️ 不需要免流？或者想找其他风格的配置？
+#    👉 请点击这里寻找适合你的配置：https://t.me/NUAN114514/173
+# ---------------------------------------------------
+# ⚠️ 郑重警告 (Disclaimer)
+# 由于本人手中没有免流卡，本配置全凭经验修改制作！
+# 可能会造成大量跳点 (即免流失败导致扣除通用流量)。
+# 请务必先小范围测试，风险自负！
+# 🤝 热烈欢迎各位大佬复刻、二改本配置文件！
+# ---------------------------------------------------
+# 💬 反馈 & 定制 (Feedback & Customization)
+# * 欢迎在 TG 群内反馈测试结果，或提出修改/新增建议，我会随缘更新！
+# * 🛠️ 专属定制服务：
+#   如果你想要属于自己的定制化配置文件，也可以在 TG 群内找我定制 (需支付一点辛苦费)。
+# ---------------------------------------------------
+# 🙌 致敬 & 资源指引 (Credits)
+# 本配置文件基于可莉 (Kelee) 大佬的懒人配置修改而来，在此对大佬的付出表示衷心感谢！
+# * 原项目地址：https://github.com/luestr/ProxyResource/tree/main
+#
+# 🧩 插件说明
+# 本配置仅预装了去广告、DNS防泄漏等基础插件。
+# * 更多丰富插件请访问：https://hub.kelee.one
+# * 我的 Loon 资源整理：http://www.nuan1145.eu.cc/archives/loonlan-ren-pei-zhi-zi-yuan
+# ---------------------------------------------------
+# 📢 关注我 & 实用资源推荐
+#
+# ✈️ 关注我的 Telegram
+# * 频道 (资源发布/动态)：https://t.me/NUAN114514
+# * 群组 (吹水/交流)：https://t.me/MSC4652
+#
+# 🧰 自用工具 & 资源库
+# * 📦 个人资源站 (综合导航)：https://nuannuan-tools.vercel.app/
+# * ☁️ PikPak 磁力下载：https://mypikpak.com/drive/activity/invited?invitation-code=66396543
+# * 📂 123 网盘资源 (提取码: NUAN)：https://www.123684.com/s/R2hjVv-6Pg13
+# * 🔧 自用内网穿透工具 (cpolar)：https://www.cpolar.com/?channel=0&invite=6DaX
+#
+# 🛒 流量 & 账号服务
+# * 📶 正规运营商流量卡：https://www.51haoka.cc/index?k=YktYNmtrWTN2R1k9
+# * 💳 Bitget Wallet (免费外币卡)：https://web3.bitget.com/share/1gWULE?inviteCode=NUAN1145
+# * 🔶 币安 (Binance) 交易所：https://www.bmwweb.academy/referral/earn-together/refer2earn-usdc/claim?hl=zh-TC&ref=GRO_28502_RAE9X&utm_source=default
+# * 🍎 Apple ID / 充值卡 / 代理：https://goso002.com/?from=24529
+# * 🌍 海外账号 / AI / 流媒体 / 游戏：https://accboyytbnn.acceboy.com/
+#
+# 🚀 网络加速
+# * 🌐 自用机场推荐：https://t.me/NUAN114514/5
+#
+# ⚠️ 提示：部分资源链接可能随时间失效，请以我的 TG 频道最新动态为准。
+# ===================================================
+# ⚙️ 配置文件特点 (Features)
+# 1. 🇨🇳 国内免流特化：内置“国内手动策略”，免流/直连一键切换，国内流量不跑冤枉路。
+# 2. ⚡️ 地区自动测速：港、台、新、美、日、韩自动选择延迟最低节点，告别手动测速。
+# 3. 🎯 应用精准分流：
+#    - TikTok 🔒 锁定 台/日/新 (解锁区域限制)
+#    - Spotify 🔒 锁定 香港 (低价区适配)
+#    - AI (ChatGPT) 🔒 锁定 台/日/新 (稳定访问)
+# 4. 🍼 小白友好：策略组逻辑清晰，拒绝复杂烧脑，复制即用。
+# ===================================================
+
+[General]
+ip-mode=v4-only
+ipv6-vif=off
+dns-server=system
+sni-sniffing=true
+disable-stun=true
+dns-reject-mode=LoopbackIP
+domain-reject-mode=DNS
+udp-fallback-mode=REJECT
+wifi-access-http-port=7222
+wifi-access-socks5-port=7221
+allow-wifi-access=false
+interface-mode=auto
+test-timeout=5
+disconnect-on-policy-change=false
+internet-test-url=http://connectivitycheck.platform.hicloud.com/generate_204
+proxy-test-url=http://www.gstatic.com/generate_204
+resource-parser=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
+geoip-url=https://geodata.kelee.one/Country-Masaiki.mmdb
+ipasn-url=https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
+skip-proxy=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlynatics.com
+bypass-tun=10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+
+[Proxy]
+
+[Remote Proxy]
+# ⚠️ 请在此处填入你的机场订阅链接 (格式如下)
+# 我的订阅 = https://example.com/api/v1/client/subscribe?token=xxxx, parser-enable=true
+
+[Remote Filter]
+# 1. 基础筛选
+全球节点=NameRegex, FilterKey="^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+
+# 2. 国内免流节点筛选
+国内节点 = NameRegex, FilterKey="(?i)(🇨🇳|CN|China|国内|上海|北京|杭州|深圳|广州|成都|武汉|重庆|西安|南京|郑州|长沙|济南|福州|移动|联通|电信)"
+
+# 3. 地区节点筛选
+香港节点 = NameRegex, FilterKey="(?i)(🇭🇰|HK|Hong Kong|HongKong|香港|深港|沪港)"
+台湾节点 = NameRegex, FilterKey="(?i)(🇹🇼|TW|TaiWan|Taiwan|台湾|台北|新北|台中|高雄)"
+新加坡节点 = NameRegex, FilterKey="(?i)(🇸🇬|SG|Singapore|狮城|新加坡)"
+美国节点 = NameRegex, FilterKey="(?i)(🇺🇸|US|USA|America|United States|美国|美|洛杉矶|圣何塞)"
+日本节点 = NameRegex, FilterKey="(?i)(🇯🇵|JP|Japan|日本|东京|大阪|埼玉)"
+韩国节点 = NameRegex, FilterKey="(?i)(🇰🇷|KR|Korea|韩国|首尔|韩)"
+
+[Proxy Group]
+# === 核心策略 ===
+# 1. 全球总策略
+全球手动策略 = select, 香港自动策略, 台湾自动策略, 新加坡自动策略, 美国自动策略, 日本自动策略, 韩国自动策略, 全球节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
+# 2. 国内免流策略 (国内流量大管家)
+国内手动策略 = select, 国内节点, DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png
+
+# === APP 独立策略 (定制版) ===
+# TikTok: 台湾、日本、新加坡 (+全球)
+TikTok = select, 全球手动策略, 台湾自动策略, 日本自动策略, 新加坡自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+
+# Spotify: 香港 (+全球)
+Spotify = select, 全球手动策略, 香港自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+
+# AI: 台湾、日本、新加坡 (+全球)
+AI = select, 全球手动策略, 台湾自动策略, 日本自动策略, 新加坡自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+
+# 其他APP保持全地区选择
+X = select, 全球手动策略, 香港自动策略, 台湾自动策略, 新加坡自动策略, 美国自动策略, 日本自动策略, 韩国自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png
+Telegram = select, 全球手动策略, 香港自动策略, 台湾自动策略, 新加坡自动策略, 美国自动策略, 日本自动策略, 韩国自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+加密货币 = select, 全球手动策略, 香港自动策略, 台湾自动策略, 新加坡自动策略, 美国自动策略, 日本自动策略, 韩国自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Digital_currency.png
+Speedtest = select, 全球手动策略, 香港自动策略, 台湾自动策略, 新加坡自动策略, 美国自动策略, 日本自动策略, 韩国自动策略, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png
+
+# === 地区自动测速策略 ===
+香港自动策略 = url-test, 香港节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Hongkong.png
+台湾自动策略 = url-test, 台湾节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Taiwan.png
+新加坡自动策略 = url-test, 新加坡节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Singapore.png
+美国自动策略 = url-test, 美国节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/United_States.png
+日本自动策略 = url-test, 日本节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Japan.png
+韩国自动策略 = url-test, 韩国节点, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Korea.png
+
+[Rule]
+FINAL, 全球手动策略
+
+[Remote Rule]
+# === APP 规则绑定 ===
+https://rule.kelee.one/Loon/Twitter.lsr, policy=X, tag=Twitter, enabled=true
+https://whatshub.top/rule/Crypto.list, policy=加密货币, tag=Crypto, enabled=true
+https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=AI, tag=AI, enabled=true
+https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled=true
+https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=true
+https://rule.kelee.one/Loon/Speedtest.lsr, policy=Speedtest, tag=Speedtest, enabled=true
+
+# === 国内/基础分流 ===
+https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
+# 国内免流绑定
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=国内手动策略, tag=CN REGION, enabled=true
+
+[Host]
+
+[Rewrite]
+
+[Script]
+
+[Remote Script]
+
+[Plugin]
+# 1. 基础功能 & 净化
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=全球手动策略, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+
+# 2. 插件仓库
+https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, enabled=true
+
+# 3. 脚本管理 & 订阅管理
+https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=全球手动策略, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=全球手动策略, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=全球手动策略, enabled=true
+
+[Mitm]
+hostname=
+ca-p12=
+ca-passphrase=
+skip-server-cert-verify=false
