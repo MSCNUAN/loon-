@@ -51,9 +51,7 @@
 **这是最重要的一步！如果不做，里面全是空的！**
 请在配置文件中找到 `[Remote Proxy]` 区域，填入你的机场订阅链接：
 
-```ini
 
-```
 
 # 👇 把下面的链接换成你自己的！
 我的订阅 = [https://example.com/api/v1/client/subscribe?token=xxxx](https://example.com/api/v1/client/subscribe?token=xxxx), parser-enable=true
